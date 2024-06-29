@@ -3,18 +3,7 @@ const scroll = new LocomotiveScroll({
     smooth: true
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.getElementById('hamburger');
-    const navItems = document.getElementById('nav-items1');
 
-    hamburger.addEventListener('click', () => {
-        if (navItems.style.display === 'flex') {
-            navItems.style.display = 'none';
-        } else {
-            navItems.style.display = 'flex';
-        }
-    });
-});
 
 document.addEventListener('DOMContentLoaded', (event) => {
     const videos = document.querySelectorAll('#video');
@@ -30,10 +19,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     });
 });
-
 var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
   });
+
+  document.getElementById('get-started').addEventListener('click', function() {
+    document.getElementById('page-3').scrollIntoView({ behavior: 'smooth' });
+});

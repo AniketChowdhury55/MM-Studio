@@ -15,6 +15,13 @@ app.get("/home", async (req, res) => {
    res.render("./home.ejs")
 })
 
+ app.get("/work", async (req, res) => {
+    res.render("./work.ejs")
+ })
+ 
+
+
+
 app.listen(8080, () => {
     console.log("listening to port 8080")
 })
