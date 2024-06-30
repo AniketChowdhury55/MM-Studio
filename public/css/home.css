@@ -344,12 +344,23 @@ body{
 }
 /* page5 starts here */
 .page-5{
-  height: 85vh;
+  height: 95vh;
   width: 100vw;
   background-color: rgb(5, 5, 75);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+}
+.glimps{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3vw;
+  color: white;
+  font-size: 2vw;
+  font-weight: 200;
 }
 /* swiper js with his swiper and the code starts here */
 .swiper {
@@ -639,7 +650,10 @@ footer{
   font-size: 3vw;
 }
 .page-5{
-  height: 30vh;
+  height: 35vh;
+}
+.glimps{
+  font-size: 5vw;
 }
 .swiper {
   width: 90vw;
