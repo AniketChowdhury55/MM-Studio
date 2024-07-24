@@ -43,6 +43,7 @@
 
 .main {
   background-color: rgb(5, 5, 75);
+  overflow: hidden;
 }
 
 /* main image background */
@@ -173,28 +174,55 @@
     gap: .5vw;
 }
 /* cardssection  */
+.big-box{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .card-section{
-    height: max-content;
-    width: 100vw;
+    height: 35vh;
+    width: 95nvw;
     padding: 0vw 5vw;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: rgb(5, 5, 75);
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.card-section::-webkit-scrollbar{
+  display: none;
+}
+.ful-card{
+  height:27vh;
+  padding: .7vw;
+  width: 17vw;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  border-radius: 10px;
+  transition: transform .2s; /* Animation */
+  margin: 1vw .5vw;
+}
+
+.ful-card:hover{
+  transform: scale(1.1);
 }
 .cards{
-    height: 45vh;
-    width: 25vw;
+    height: 16vh;
+    width: 17vw;
     background-color: white;
     border-radius: 10px;
-    margin: 2vw 2vw;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
 }
-.cards iframe{
+.cards img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .cards p{
     padding: 0vw 2vw;
@@ -590,4 +618,9 @@ flex-wrap: wrap;
 .swiper-pagination-bullet-active {
   opacity: var(--swiper-pagination-bullet-opacity, 1);
   background: #F68712;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #000; /* Change button color if needed */
 }
