@@ -1,8 +1,10 @@
-const { render } = require("ejs");
+if(process.env.WEB_FORMS != "production") {
+    require('dotenv').config();
+  }
+  const { render } = require("ejs");
 const express = require("express");
 const app = express();
 const path = require("path");
-
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "/public")));

@@ -40,7 +40,7 @@ body{
   background-color: rgb(5, 5, 75);
   height: max-content;
   width: 100%;
-  overflow: hidden;
+  overflow:hidden;
 }
 
 /* main image background */

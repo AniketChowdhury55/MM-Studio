@@ -29,22 +29,17 @@
   /* main starts here */
   .main{
     background-color: rgb(5, 5, 75);
-    width: 100vw;
-    overflow: hidden;
+    width: 100%;
+    overflow:hidden;
   }
   /* page1 starts here */
+  .page-1 {
+    height: 80vh;
+    width: 100vw;
+    position: relative;
+    background-color: rgb(5, 5, 75);
+  }
   /* main starts here */
-.page-1 {
-  height: 80vh;
-  width: 100vw;
-  position: relative;
-  background-color: rgb(5, 5, 75);
-}
-
-.main {
-  background-color: rgb(5, 5, 75);
-  overflow: hidden;
-}
 
 /* main image background */
 .page-1 img {
@@ -187,11 +182,6 @@
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(5, 5, 75);
-    overflow-y: hidden;
-    overflow-x: scroll;
-}
-.card-section::-webkit-scrollbar{
-  display: none;
 }
 .ful-card{
   height:27vh;

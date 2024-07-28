@@ -21,7 +21,7 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
 
-
   document.getElementById('get-started').addEventListener('click', function() {
     document.getElementById('top').scrollIntoView({ behavior: 'smooth' });
 });
+
