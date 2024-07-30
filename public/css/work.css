@@ -195,6 +195,7 @@
   display: none; /* For Chrome, Safari, and Opera */
 }
 .ful-card{
+  text-decoration: none;
   height:27vh;
   padding: .7vw;
   width: 17vw;
@@ -205,6 +206,10 @@
   border-radius: 10px;
   transition: transform .2s; /* Animation */
   margin: 1vw .5vw;
+  color: black;
+}
+a{
+  text-decoration: none;
 }
 
 .ful-card:hover{
